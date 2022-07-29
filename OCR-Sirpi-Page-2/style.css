@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  background-color: #5be7cd;
+  padding: 10px;
+  width: 100%;
+}
+
+.header > h1 {
+  margin-left: 78px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.ocr {
+  color: #ffffff;
+}
+
+.header > img {
+  width: 70px;
+  height: 45px;
+  margin-right: 110px;
+}
+
+/* MAIN */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+  margin: 25px auto auto 80px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.welcome > h2 {
+  color: #5c5c5c;
+}
+
+.fileSuccess {
+  text-align: center;
+  color: #2a9e7b;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.upload-contanier {
+  display: flex;
+  font-family: "Inter";
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #5c5c5c;
+  border-radius: 8px;
+  width: 700px;
+  height: 350px;
+  margin: 20px auto 20px auto;
+}
+
+/* PART ONE LEFT SIDE */
+
+.partOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 250px;
+  border-right: 1px solid #5c5c5c;
+}
+
+.upload-text {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.upload-contanier img {
+  width: 70px;
+}
+
+.previewBtn {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  color: #5c5c5c;
+  border: 1px solid #5bb4e7;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.previewBtn:hover {
+  background-color: #5bb4e7;
+  border: 1px solid #31759b;
+  color: #232323;
+}
+
+/* PART TWO RIGHT SIDE */
+
+.partTwo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 450px;
+}
+
+.fileChangeImage {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.arrowImg {
+  object-fit: contain;
+}
+
+.extractBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  padding: 5px;
+  color: #232323;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #5bb4e7;
+  border: 1px solid #31759b;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.extractBtn:hover {
+  color: #5c5c5c;
+  border: 1px solid #5bb4e7;
+  border-radius: 10px;
+  background-color: #ffffff;
+}

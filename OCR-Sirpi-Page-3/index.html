@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sirpi OCR</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Sirpi <span class="ocr">OCR</span></h1>
+        <img src="images/Group 26.png" alt="profile" />
+      </header>
+      <main>
+        <section class="welcome">
+          <h1>Welcome to Sirpi OCR!</h1>
+          <h2>
+            Easily convert the doctor prescription image files to text files!
+          </h2>
+        </section>
+        <p class="fileSuccess">Text file extraction successful !</p>
+        <section class="upload-contanier">
+          <div class="file-logo">
+            <img src="images/File.png" alt="fileupload logo" />
+            <p class="file-text">prescription text</p>
+          </div>
+          <div class="btn-container">
+            <input type="file" id="file" style="display: none" />
+            <button
+              id="button"
+              name="button"
+              value="Upload"
+              class="uploadAgainBtn"
+              onclick="thisFileUpload();"
+            >
+              Upload another file
+            </button>
+            <button class="saveBtn">Save to device</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
+    </script>
+  </body>
+</html>

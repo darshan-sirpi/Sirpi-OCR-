@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sirpi OCR</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Sirpi <span class="ocr">OCR</span></h1>
+        <img src="images/Group 26.png" alt="profile" />
+      </header>
+      <main>
+        <section class="welcome">
+          <h1>Welcome to Sirpi OCR!</h1>
+          <h2>
+            Easily convert the doctor prescription image files to text files!
+          </h2>
+        </section>
+        <p class="fileSuccess">File upload success!</p>
+        <section class="upload-contanier">
+          <div class="partOne">
+            <p class="upload-text">Uploaded file</p>
+            <img src="images/ImageJpg.png" alt="jpg logo" />
+            <!--<p>File name</p>-->
+            <button class="previewBtn">Preview Image</button>
+          </div>
+          <div class="partTwo">
+            <div class="fileChangeImage">
+              <img src="images/Vector.png" alt="file logo" />
+              <img class="arrowImg" src="images/Arrow 1.png" alt="arrow logo" />
+              <img src="images/File.png" alt="fileupload logo" />
+            </div>
+            <div>
+              <button class="extractBtn">Extract text file</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      function thisFileUpload() {
+        document.getElementById("file").click();
+      }
+    </script>
+  </body>
+</html>

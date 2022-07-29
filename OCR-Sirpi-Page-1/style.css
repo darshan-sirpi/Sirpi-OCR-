@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+  background-color: #5be7cd;
+  padding: 10px;
+  width: 100%;
+}
+
+.header > h1 {
+  margin-left: 78px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.ocr {
+  color: #ffffff;
+}
+
+.header > img {
+  width: 70px;
+  height: 45px;
+  margin-right: 110px;
+}
+
+/* MAIN */
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 140px;
+  margin: 25px auto auto 80px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.welcome > h2 {
+  color: #5c5c5c;
+}
+
+.upload-start {
+  text-align: center;
+}
+
+.upload-contanier {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #5c5c5c;
+  border-radius: 8px;
+  width: 500px;
+  height: 300px;
+  margin: 25px auto auto auto;
+}
+
+.upload-contanier > img {
+  width: 70px;
+}
+
+.upload-btn {
+  height: 45px;
+  font-size: 20px;
+  padding: 10px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 10px;
+  background-image: linear-gradient(#2a9e7b, #5be7cd);
+}
+
+.upload-btn:hover {
+  cursor: pointer;
+}
